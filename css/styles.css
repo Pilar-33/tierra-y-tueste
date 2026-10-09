@@ -1,0 +1,775 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*1 rem = 10px */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #f5ebdd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  flex: 1;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 3rem 0;
+}
+
+h2 {
+  color: #f5ebdd;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+header,
+footer {
+  background: #3e2723;
+  color: #f5ebdd;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1.8rem 0;
+  background: #3e2723;
+}
+
+footer {
+  padding: 1rem 4rem;
+}
+
+/* ========================================== */
+/*             HEADER Y LOGO REFINADO         */
+/* ========================================== */
+
+.div-logo {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0;
+  background: none; 
+  border: none;
+}
+
+.icono-logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  stroke: #dfbca3;       
+  flex-shrink: 0;
+}
+
+.img-logo {
+  width: 9rem;
+  height: 9rem;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.header-nav {
+  margin-right: 2rem;
+}
+
+/* Alineación limpia de los enlaces del menú */
+.header-nav a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2.rem;
+  font-weight: 500;
+  color: #f5ebdd;
+  text-decoration: none;
+  padding: 2rem 1.8rem;
+  display: inline-block;
+  transition: color 0.3s ea;
+}
+
+.header-nav a:hover {
+  color: #dfbca3;
+}
+
+.header-nav {
+  margin-right: 2rem;
+}
+
+.header-nav ul,
+footer .footer-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-list li {
+  padding: 1rem;
+}
+
+.footer-list img {
+  width: 5rem;
+  padding: 0.5rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                    ESTILOS EXCLUSIVOS DEL INDEX (HERO)                     */
+/* -------------------------------------------------------------------------- */
+
+.hero-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.hero-inicio h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #f5ebdd;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.hero-inicio h1 em {
+  color: #dfbca3;
+  font-style: italic;
+}
+
+/* Contenedor de los dos videos */
+.contenedor-videos-inicio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 120rem;
+  margin-bottom: 4rem;
+}
+
+/* Estilo individual del video */
+.video-inicio {
+  width: 100%;
+  max-width: 90rem;   
+  height: 45rem;     
+  object-fit: cover;
+  border-radius: 2rem;
+  border: 4px solid #dfbca3;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7); /* Sombra más profunda y elegante */
+}
+
+
+/* Botón principal del Hero */
+.btn-inicio {
+  display: inline-block;
+  background-color: transparent; 
+  color: #dfbca3;                
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;       
+  text-transform: uppercase;      
+  padding: 1.6rem 4.5rem;
+  border: 2px solid #dfbca3;     
+  border-radius: 5rem;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-inicio:hover {
+  background-color: #dfbca3;
+  color: #3e2723;
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(223, 188, 163, 0.3);
+}
+
+
+/* ------------------------------------------------------------------------- */
+/*                                   colores                                  */
+/* -------------------------------------------------------------------------- */
+.bg-primary {
+  background-color: #1a1210;
+}
+
+.bg-secondary {
+  background-color: #dfbca3;
+}
+
+.text-primary {
+  color: #5d4037;
+}
+
+.text-secondary {
+  color: #6d4c41;
+}
+
+.text-dark {
+  color: #3e2723;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               HOME                                         */
+/* -------------------------------------------------------------------------- */
+.inicio {
+  flex-wrap: wrap;
+}
+
+.inicio h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.parrafo {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.contenedor-tarjetas {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  background-color: #241815;
+  padding: 4rem 3rem;
+  border: 2px solid #5d4037;
+  border-radius: 2rem;
+
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.titulo-productos {
+  color: #f5ebdd;
+  font-size: 3.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #2d1c18;
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #5d4037;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card.text-dark {
+  color: #d2c0b8;
+}
+
+/* Título de Espresso, Cappuccino, etc. */
+.card h3 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+/*Las descripciones (Texto justificado) */
+.card p:first-of-type {
+  color: #d2c0b8;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+/* Los Precios (Resaltados y centrados) */
+.card p:nth-of-type(2) {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: auto;
+}
+
+.card img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  border: 2px solid #dfbca3;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                CONTACTO                                    */
+/* -------------------------------------------------------------------------- */
+
+.contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.titulo-contacto {
+  color: #f5ebdd;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.form-contacto {
+  width: 100%;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #3e2723;
+  padding: 4rem;
+  border-radius: 2rem;
+
+  border: 2px solid #dfbca3;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.grupo-input label {
+  color: #d2c0b8;
+  font-size: 1.6rem;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+
+  color: #3e2723;
+  background-color: #f5ebdd;
+  border: 2px solid #dfbca3;
+  border-radius: 1rem;
+  outline: none;
+  font-family: inherit;
+}
+
+.grupo-input textarea {
+  min-height: 15rem;
+  resize: vertical;
+}
+
+.form-contacto .btn {
+  width: 30%;
+  margin-top: 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            MAPA Y UBICACIÓN                                */
+/* -------------------------------------------------------------------------- */
+.mapa-contenedor {
+  width: 100%;
+  max-width: 50rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.mapa-contenedor .direccion {
+  font-size: 1.8rem;
+  color: #d2c0b8;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+/* Icono estilizado con los colores de tu cafetería */
+.icono-ubicacion {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: #dfbca3; /* Mismo color secundario del sitio */
+}
+
+.mapa-contenedor iframe {
+  width: 100%;
+  height: 35rem;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  filter: grayscale(20%) contrast(90%); /* Suaviza el mapa para acoplarlo al tono cálido */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         SECCIÓN DE RESEÑAS                                 */
+/* -------------------------------------------------------------------------- */
+
+/* Badge interactivo de reseñas */
+.resenas-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  background-color: #241815; 
+  border: 2px solid #dfbca3;  
+  padding: 0.8rem 2rem;
+  border-radius: 3rem;
+
+  text-decoration: none;
+  margin: 1rem auto 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resenas-badge:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.estrellas-badge {
+  color: #dfbca3;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.texto-badge {
+  color: #f5ebdd;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#resenas {
+  scroll-margin-top: 8rem;
+}
+
+.resenas {
+  width: 95%;
+  max-width: 150rem;
+  margin: 3rem auto 5rem;
+  padding: 4rem 3rem;
+  background-color: #241815;
+  color: #f5ebdd;
+  border: 2px solid #6d4c41;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Nombre de la cafetería */
+.marca-resenas {
+  color: #dfbca3;
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Título principal */
+.titulo-resenas {
+  color: #f5ebdd;
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+/* Subtítulo */
+.texto-resenas {
+  color: #d2c0b8;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4.5rem;
+}
+
+/* GRID: tres tarjetas en una fila */
+.contenedor-resenas {
+  width: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+/* Tarjeta individual */
+.tarjeta-resena {
+  background-color: #241815;
+  border: 2px solid #5d4037;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 36% minmax(0, 1fr);
+  align-items: center;
+  gap: 2rem;
+  min-width: 0;
+}
+
+/* Fotografía de cada reseña */
+.img-resena {
+  width: 100%;
+  height: 28rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1.2rem;
+  display: block;
+  background-color: #2d1c18;
+}
+
+/* Contenido de la tarjeta */
+.contenido-resena {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Estrellas de calificación */
+.estrellas {
+  color: #dfbca3;
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.2;
+}
+
+/* Nombre del cliente */
+.nombre-cliente {
+  color: #f5ebdd;
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+/* Comentario */
+.comentario {
+  color: #d2c0b8;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         PÁGINA DE AGRADECIMIENTO                           */
+/* -------------------------------------------------------------------------- */
+
+.contenedor-gracias {
+  width: 100%;
+  max-width: 50rem; /* Mismo ancho máximo que tu formulario de contacto */
+  margin: 5rem auto;
+  padding: 4rem 3rem;
+  background-color: #3e2723; /* Mismo café oscuro que el formulario */
+  border-radius: 2rem;
+  border: 2px solid #dfbca3;  /* Borde beige cálido de la marca */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contenedor-gracias h1 {
+  color: #dfbca3;
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contenedor-gracias .parrafo {
+  color: #d2c0b8;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  padding: 0;
+  margin-bottom: 2.5rem;
+}
+
+.btn-volver {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                            DISEÑO RESPONSIVO                               */
+/* -------------------------------------------------------------------------- */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1100px) {
+  .contenedor-resenas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tarjeta-resena {
+    grid-template-columns: 1fr;
+  }
+
+  .img-resena {
+    height: 24rem;
+  }
+}
+
+/* Tablets pequeñas y Celulares grandes */
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .parrafo {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  /* Ajustes de Navegación */
+  header {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .header-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  /* Ajustes del Formulario y Botón */
+  .form-contacto {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .form-contacto .btn {
+    width: 100%;
+  }
+
+  /* Ajustes del Footer */
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .contenedor-gracias {
+    padding: 3rem 1.5rem;
+  }
+
+  /* --- AJUSTES DEL HERO (INDEX) --- */
+  .hero-inicio h1 {
+    font-size: 2.8rem;
+  }
+
+  .video-inicio {
+    max-width: 100%;
+    height: 25rem;
+  }
+
+  .btn-inicio {
+    font-size: 1.7rem;
+    padding: 1.5rem 3rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .resenas {
+    padding: 3rem 1.5rem;
+  }
+
+  .titulo-resenas {
+    font-size: 2.5rem;
+  }
+
+  .texto-resenas {
+    font-size: 1.7rem;
+  }
+
+  .contenedor-resenas {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .tarjeta-resena {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .img-resena {
+    height: 23rem;
+  }
+
+  .nombre-cliente {
+    font-size: 2.2rem;
+  }
+
+  .comentario {
+    font-size: 1.6rem;
+  }
+}

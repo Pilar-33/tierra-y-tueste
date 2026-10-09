@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" 
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>CONTACTO - CAFETERÍA</title>
+</head>
+<body class="bg-primary">
+    <header>
+        <div class="div-logo">
+            <a class="logo" href="../index.html" >
+                <img src="../img/logo5.png" alt="Logo Tierra &amp; Tueste" class="img-logo">
+            </a>
+        </div>
+        
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./productos.html#resenas">Reseñas</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contacto">
+            <h1 class="titulo-contacto text-secondary">Contactanos</h1>
+            
+            <form class="form-contacto" action="https://formsubmit.co/pilarlevano4@gmail.com" method="POST" autocomplete="off">
+    
+                <input type="hidden" name="_next" value="http://localhost:50874/pages/gracias.html">
+                
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="grupo-input">
+                    <label for="nombre">Nombres y Apellidos:</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Juan Pérez" autocomplete="off" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="email">Correo electrónico:</label>
+                    <input id="email" type="email" name="email" placeholder="ejemplo@palchonat.com" autocomplete="off" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="message" autocomplete="off" required></textarea>
+                </div>
+
+                <button class="btn bg-secondary text-dark" type="submit">Enviar</button>
+            </form>
+            
+            <!-- AQUÍ VA EL MAPA CON EL IFRAME -->
+            <div class="mapa-contenedor">
+                <h2>Nuestra Ubicación</h2>
+                <p class="direccion">
+                    <svg class="icono-ubicacion" 
+                         xmlns="http://www.w3.org/2000/svg" 
+                         viewBox="0 0 24 24" 
+                         fill="currentColor"
+                    >
+                        <path d="M12 2C8.13 2 5 5.13 5 9
+                                 c0 5.25 7 13 7 13
+                                 s7-7.75 7-13
+                                 c0-3.87-3.13-7-7-7
+                                 zm0 9.5
+                                 c-1.38 0-2.5-1.12-2.5-2.5
+                                 s1.12-2.5 2.5-2.5 
+                                 2.5 1.12 2.5 2.5
+                                 -1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    Av. de Mayo 825, CABA
+                </p>
+                
+                <iframe 
+                    title="Ubicación de la cafetería"
+                    src="https://maps.google.com/maps?q=Av.%20de%20Mayo%20825,%20CABA&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2026 · Sitio web realizado por Pilar para Talento Tech</p>
+        <nav>
+            <ul class="footer-list">
+                <li>
+                    <img src="../img/whatsapp.png" alt="logo whatsapp">
+                    <img src="../img/instagram.png" alt="logo instagram">
+                </li>
+            </ul>
+        </nav>
+    </footer> 
+	
+</body>
+</html>
