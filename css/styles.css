@@ -703,7 +703,8 @@ footer .footer-list {
 
   .header-nav a {
     padding: 1rem 1.5rem; 
-    font-size: 1.5rem;     
+    font-size: 1.5rem;
+  }
 
   /* Ajustes del Formulario y Botón */
   .form-contacto {
