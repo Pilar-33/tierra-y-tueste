@@ -694,11 +694,16 @@ footer .footer-list {
     padding: 1rem;
   }
 
-  .header-nav ul {
+ .header-nav ul {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0;
+    gap: 0.5rem;      
+    padding: 0 1rem;  
   }
+
+  .header-nav a {
+    padding: 1rem 1.5rem; 
+    font-size: 1.5rem;     
 
   /* Ajustes del Formulario y Botón */
   .form-contacto {
